@@ -3,7 +3,6 @@ include 'functions.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,7 +15,6 @@ include 'functions.php';
     <link rel="stylesheet" href="landing_page/css/style.css">
     <link rel="shortcut icon" href="landing_page/images/favicon.png" />
 </head>
-
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div id="mobile-menu-overlay"></div>
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -35,7 +33,7 @@ include 'functions.php';
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php#penting">Penting</a>
+                        <a class="nav-link" href="index.php?#penting">Penting</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link active" href="konsultasi_lp.php">Konsultasi</a>
@@ -59,7 +57,6 @@ include 'functions.php';
                     <div class="col-sm-9" data-aos="fade-up" data-aos-offset="-500">
                         <h3 class="font-weight-medium text-dark mt-5 mt-lg-0">Konsultasi</h3>
                         <h5 class="text-dark mb-5">Isi Biodata dibawah ini untuk Mendiagnosa Penyakitmu:</h5>
-                        <!--  -->
                         <form method="POST">
                             <?php
                             $success = false;
@@ -81,9 +78,7 @@ include 'functions.php';
                                     print_msg('Belum ada gejala yang dipilih!');
                                 }
                             }
-
                             $_SESSION['data'] = $_POST;
-
                             ?>
                             <div class="row">
                                 <div class="col-sm-6">
@@ -127,8 +122,8 @@ include 'functions.php';
                                         <?php
                                         $q = esc_field($_GET['q']);
                                         $rows = $db->get_results("SELECT * FROM tb_gejala 
-      							  WHERE kode_gejala LIKE '%$q%' OR nama_gejala LIKE '%$q%'
-       							  ORDER BY kode_gejala");
+      							        WHERE kode_gejala LIKE '%$q%' OR nama_gejala LIKE '%$q%'
+       							        ORDER BY kode_gejala");
                                         $no = 1;
                                         foreach ($rows as $row) : ?>
                                             <tr>
@@ -158,7 +153,6 @@ include 'functions.php';
                 </div>
             </div>
         </section>
-
     </div>
     <footer class="footer">
         <div class="footer-bottom">

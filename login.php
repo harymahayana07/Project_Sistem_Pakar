@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +9,6 @@
     <link rel="stylesheet" href="admin/assets/css/style.css">
     <link rel="shortcut icon" href="admin/assets/images/favicon.ico" />
 </head>
-
 <body>
     <div class="container-scroller">
         <div class="container-fluid page-body-wrapper full-page-wrapper">
@@ -23,8 +20,22 @@
                                 <img src="admin/assets/images/threedoc_logo.png">
                             </div>
                             <h6 class="font-weight-light">Sign in to continue as Admin.</h6>
-                                <?php require_once "aksi.php";?>
-                            <form class="pt-3" method="post" action="aksi.php">
+                            <?php require_once "functions.php";
+                            if (isset($_POST['login'])) {
+                                $user = esc_field($_POST['user']);
+                                $pass = esc_field($_POST['pass']);
+
+                                $row = $db->get_row("SELECT * FROM tb_admin WHERE user='$user' AND pass='$pass'");
+                                if ($row) {
+                                    $_SESSION['login'] = $row->user;
+                                    $_SESSION['level'] = $row->level;
+                                    redirect_js("dashboard.php");
+                                } else {
+                                    print_msg("Username dan Password Salah.");
+                                }
+                            }
+                            ?>
+                            <form class="pt-3" method="post" action="">
                                 <div class="form-group">
                                     <label>Username</label>
                                     <input type="text" class="form-control form-control-lg" name="user" placeholder="Username" autofocus />
@@ -36,7 +47,6 @@
                                 <input type="submit" name="login" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn mt-3" value="Login">
                             </form>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -47,5 +57,4 @@
     <script src="admin/assets/js/hoverable-collapse.js"></script>
     <script src="admin/assets/js/misc.js"></script>
 </body>
-
 </html>

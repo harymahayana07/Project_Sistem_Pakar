@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,7 +12,6 @@
 	<link rel="stylesheet" href="landing_page/css/style.css">
 	<link rel="shortcut icon" href="landing_page/images/favicon.png" />
 </head>
-
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<div id="mobile-menu-overlay"></div>
 	<nav class="navbar navbar-expand-lg fixed-top">
@@ -62,7 +60,7 @@
 										baik pada manusia maupun hewan. Penyakit <br>
 										menular disebabkan oleh agen biologi seperti <br>mikroorganisme patogenik (virus, bakteri, dan <br>fungi) serta parasit.
 									</p>
-									<a href="konsultasi.php" class="btn btn-secondary mt-3">Konsultasi Sekarang!</a>
+									<a href="konsultasi_lp.php" class="btn btn-secondary mt-3">Konsultasi Sekarang!</a>
 								</div>
 								<div class="mt-5 mt-lg-0">
 									<img src="landing_page/images/threedoc_357.png" style="height: 380px; width: 500px;" alt="marsmello" class="img-fluid" data-aos="zoom-in-up">
@@ -130,5 +128,4 @@
 	<script src="landing_page/vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
 	<script src="landing_page/js/template.js"></script>
 </body>
-
 </html>

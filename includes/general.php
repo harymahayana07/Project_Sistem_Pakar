@@ -52,8 +52,8 @@ function alert($url){
 }
 
 function print_msg($msg, $type = 'danger'){
-    echo('<div class="alert alert-'.$type.' alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'.$msg.'</div>');
+    echo('<div class="alert alert-'.$type. ' alert-dismissible" role="alert">
+   <a href=""><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></a>&emsp;'.$msg.'</div>');
 }
 
 function get_client_ip() {
