@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="admin/assets/css/style.css">
     <link rel="shortcut icon" href="admin/assets/images/favicon.ico" />
 </head>
+
 <body>
     <div class="container-scroller">
         <div class="container-fluid page-body-wrapper full-page-wrapper">
@@ -35,7 +37,7 @@
                                 }
                             }
                             ?>
-                            <form class="pt-3" method="post" action="">
+                            <form class="pt-3 mb-4" method="post" action="">
                                 <div class="form-group">
                                     <label>Username</label>
                                     <input type="text" class="form-control form-control-lg" name="user" placeholder="Username" autofocus />
@@ -46,6 +48,7 @@
                                 </div>
                                 <input type="submit" name="login" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn mt-3" value="Login">
                             </form>
+                            <a class="font-weight-medium text-dark" href="index.php">Kembali</a>
                         </div>
                     </div>
                 </div>
@@ -57,4 +60,5 @@
     <script src="admin/assets/js/hoverable-collapse.js"></script>
     <script src="admin/assets/js/misc.js"></script>
 </body>
+
 </html>

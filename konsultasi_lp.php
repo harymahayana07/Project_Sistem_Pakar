@@ -3,6 +3,7 @@ include 'functions.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,6 +16,7 @@ include 'functions.php';
     <link rel="stylesheet" href="landing_page/css/style.css">
     <link rel="shortcut icon" href="landing_page/images/favicon.png" />
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div id="mobile-menu-overlay"></div>
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -33,7 +35,10 @@ include 'functions.php';
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?#penting">Penting</a>
+                        <a class="nav-link" href="index.php">Penting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Team</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link active" href="konsultasi_lp.php">Konsultasi</a>
